@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"go-webapp/src/utils"
 	"go-webapp/src/config"
 	"go-webapp/src/router"
+	"go-webapp/src/utils"
 	"log"
 	"net/http"
 )
-func main(){
+
+func main() {
 	config.Iniciar()
 	utils.CarregarTemplates()
 	r := router.Gerar()
